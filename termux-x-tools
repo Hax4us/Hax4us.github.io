@@ -24,14 +24,14 @@ then
 echo "*******************************************"
 echo "            Adding repository"
 echo "*******************************************"
-echo "deb [trusted=yes arch=all,arm] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
+printf "\ndeb [trusted=yes arch=all,arm] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
 apt-get update
 elif [ $ar = "aarch64" -o $ar = "armv8" ]
 then
 echo "*******************************************"
 echo "            Adding repository"
 echo "*******************************************"
-echo "deb [trusted=yes arch=all,aarch64] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
+printf "\ndeb [trusted=yes arch=all,aarch64] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
 apt-get update
 else
 echo "*******************************************"
