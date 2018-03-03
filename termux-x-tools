@@ -1,75 +1,43 @@
-clear
-echo "*******************************************"
-echo "        Script by Hax4Us(devil) "
-echo "*******************************************"
-echo " "
-echo "*********************************************"
-echo "Modifying without my permission is prohibited"
-echo "*********************************************"
-echo
-echo "*******************************************"
-echo "    Installing dependencies ( for setup)"
-echo "*******************************************"
-pkg install curl -y
-pkg install gnupg -y
-pkg install gnupg2 -y
-sleep 1
-clear
 echo "*******************************************"
 echo "      Checking your architecture"
 echo "*******************************************"
 ar=$(dpkg --print-architecture)
 if [ $ar = "armv6" -o $ar = "armv7" -o $ar = "arm" -o $ar = "armhf" ]
 then
+rm $PREFIX/etc/apt/sources.list
 echo "*******************************************"
 echo "            Adding repository"
 echo "*******************************************"
-printf "\ndeb [trusted=yes arch=all,arm] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
-apt-get update
+echo "deb [arch=all,arm] https://termux.net stable main" >> $PREFIX/etc/apt/sources.list
+echo "deb [arch=all,arm] https://xeffyr.github.io/termux-x-repository/ termux x-gui" >> $PREFIX/etc/apt/sources.list
+echo "deb [trusted=yes arch=all,arm] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
 elif [ $ar = "aarch64" -o $ar = "armv8" ]
 then
+rm $PREFIX/etc/apt/sources.list
 echo "*******************************************"
 echo "            Adding repository"
 echo "*******************************************"
-printf "\ndeb [trusted=yes arch=all,aarch64] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
-apt-get update
+echo "deb [arch=all,aarch64] https://termux.net stable main" >> $PREFIX/etc/apt/sources.list
+echo "deb [arch=all,aarch64] https://xeffyr.github.io/termux-x-repository/ termux x-gui" >> $PREFIX/etc/apt/sources.list
+echo "deb [trusted=yes arch=all,aarch64] https://hax4us.github.io/termux-tools/ termux extras" >> $PREFIX/etc/apt/sources.list
 else
 echo "*******************************************"
 echo "     Your phone is not compatible :( "
 echo "*******************************************"
-exit
 fi
-sleep 1
+sleep 3
 clear
 echo "*******************************************"
 echo "               Adding key"
 echo "*******************************************"
 curl -LO https://xeffyr.github.io/termux-x-repository/pubkey.gpg
 apt-key add pubkey.gpg
-echo
 echo " Key added "
-sleep 1
+sleep 3
 clear
 echo "*******************************************"
-echo "   Install dependencies (for wireshark)"
+echo "      Performing Update"
 echo "*******************************************"
-apt-get install tigervnc -y
-vncserver
-sleep 1
+apt-get update
+sleep 3
 clear
-echo "*******************************************"
-echo "             setup completed"
-echo "*******************************************"
-sleep 2
-clear
-echo "*******************************************"
-echo "           Installing wireshark"
-echo "*******************************************"
-apt-get install wireshark -y
-sleep 1
-#clear
-echo
-echo
-echo "*******************************************"
-echo "    type -----> wireshark-gtk to start"
-echo "*******************************************"
