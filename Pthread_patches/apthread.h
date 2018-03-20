@@ -9,6 +9,9 @@ static void thread_cancel_signal_handler(int sig_num)
 	}
 }
 
+/* This function can be called in the place of pthread_setcancelstate() and setcanceltype 
+*/
+/* Note it must be called for cancelable threads */
 int thread_cancelable()
 {
 	struct sigaction action;
@@ -19,7 +22,7 @@ int thread_cancelable()
 
 	return sigaction(SIGUSR1, &action, NULL);
 }
-
+/* Substitute for pthread_cancel */
 int cancel_thread(pthread_t thread)
 {
 	return pthread_kill(thread, SIGUSR1);
