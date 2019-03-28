@@ -17,8 +17,7 @@ println
 println
 echo "            Adding repository"
 println
-mkdir -p $PREFIX/etc/apt/sources.list.d
-echo "deb [trusted=yes] https://hax4us.github.io/termux-tools/ termux extras" > $PREFIX/etc/apt/sources.list.d/hax4us.list
+echo "deb https://termux.net stable main" > ${PREFIX}/etc/apt/sources.list
 echo "deb https://termux.xeffyr.ml/ extra main x11" > $PREFIX/etc/apt/sources.list.d/xeffyr.list
 println
 echo "               Adding key"
