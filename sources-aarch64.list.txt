@@ -1,3 +1,0 @@
-deb [arch=all,aarch64] https://termux.net stable main
-deb [arch=all,aarch64] https://termux.xeffyr.ml/ extra main x11
-deb [trusted=yes arch=all,aarch64] https://hax4us.github.io/termux-tools termux extras
