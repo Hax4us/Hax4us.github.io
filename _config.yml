@@ -1,0 +1,209 @@
+# --- General options --- #
+
+# Name of website
+title: Hax4Us
+
+# Short description of your site
+description: Welcome To Android World!
+
+# Your name to show in the footer
+author: Lokesh Pandey
+
+# --- Local development options ---
+# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
+# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+
+# url is the the website domain URL without a trailing slash
+url: "https://hax4us.github.io"
+
+# baseurl should be an empty string
+baseurl: "/blog"
+
+#For my changes
+# use meta-title: for the center heading of the page.
+# use title: to set the <title> of the web page.
+# use subtitle: to set the sub heading for that title(meta-title). NOTE: if(meta-title exists){subtilel visiblity = true}
+
+# --- Navigation bar options --- #
+
+# List of links in the navigation bar
+navbar-links:
+  Projects:
+    - TermuxBlack: "https://github.com/hax4us/TermuxBlack"
+    - Apkmod: "https://github.com/hax4us/Apkmod"
+  About Me: "aboutme"
+#  Tags: "tags"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/assets/img/logo.jpg"
+round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter. The logo will have a height of 40px
+# title-img: /path/to/image
+
+# --- Background colour/image options --- #
+
+# By default, the navigation bar and footer have a light gray background, and the main page
+# has a white background. You can specify a different background colour or a background image
+# for the navigation bar, the main page, and the footer.
+# navbar-col: "orange"
+# navbar-img: "/assets/img/bgimage.png"
+# footer-col: "blue"
+# footer-img: "/assets/img/bgimage.png"
+# page-col: "#FF0000"
+# page-img: "/assets/img/bgimage.png"
+
+# --- Footer options --- #
+
+# Select the social network links that you want to show in the footer.
+# Uncomment the links you want to show and add your information to each one.
+# If you don't want to show a link to an RSS feed, set rss to "false".
+social-network-links:
+  email: "lkpandey950@gmail.com"
+  facebook: hax4us
+  github: hax4us
+  twitter: hax4us
+# reddit: yourname
+# linkedin: hax4us
+# xing: yourname
+# stackoverflow:
+# snapchat: yourname
+  instagram: hax4us
+  rss: false
+  youtube: hax4us
+# spotify: yourname
+# telephone: +1-(000)-000-0000
+# steam: yourname
+# twitch: yourname
+# yelp: yourname
+
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: false
+
+# How to display the link to the website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "www.hax4us.com"
+
+# --- Web Statistics Section --- #
+
+# Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-172514231-1"
+
+# Google Tag Manager ID
+#gtm: ""
+
+# --- Comments --- #
+
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "hax4us"
+
+# To use Facebook Comments, fill in a Facebook App ID
+# fb_comment_id: ""
+
+# --- Misc --- #
+
+# Facebook App ID
+# fb_app_id: ""
+
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+title-separator: "-"
+
+# Ruby Date Format
+date_format: "%B %-d, %Y"
+
+# --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "Asia/Kolkata"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+      readtime: true # add estimated reading time on all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
+
+# Use tags index page and make tags on each post clickable
+link-tags: true
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Vagrantfile
+
+#Meta data for your Posts
+metadata:
+  _posts:
+    - name: "layout"
+      field:
+        element: "hidden"
+        value: "post"
+    - name: "title"
+      field:
+        element: "text"
+        label: "Post title"
+        placeholder: "Title"
+        alterable: true
+    - name: "subtitle"
+      field:
+        element: "textarea"
+        label: "Subtitle"
+        placeholder: "A description of your post."
+        alterable: true
+    - name: "date"
+      field:
+        element: "text"
+        label: "Date"
+        help: "Enter date of post."
+        placeholder: "yyyy-mm-dd"
+        alterable: true
+    - name: "image"
+      field:
+        element: "text"
+        label: "Image"
+        help: "Add a thumbnail image to your post."
+        placeholder: "Thumbnail"
+        alterable: true
+    - name: "published"
+      field:
+        element: "checkbox"
+        label: "Publish"
+        help: "Check to publish post, uncheck to hide."
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
