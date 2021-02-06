@@ -17,7 +17,7 @@ author: Lokesh Pandey
 url: "https://hax4us.github.io"
 
 # baseurl should be an empty string
-baseurl: "/blog"
+baseurl: ""
 
 #For my changes
 # use meta-title: for the center heading of the page.
