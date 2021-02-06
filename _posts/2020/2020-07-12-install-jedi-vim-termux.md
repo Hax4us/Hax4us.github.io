@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Jedi-Vim In Termux
-cover-img: /blog/assets/img/vimjedi_preview.jpg
+cover-img: /assets/img/vimjedi_preview.jpg
 tags: [vim, termux]
 ---
 Let's see how to install jedi-vim plugin for python in termux. It's a cool plugin for pythonic guys.
@@ -26,12 +26,12 @@ Apart from that, jedi-vim supports the following commands
 
 ### Steps :
 - Open/Create `.vimrc` file like this `vim ~/.vimrc` and edit your `.vimrc` file like below
-<center><img src="/blog/assets/img/vimrc.jpg" width="80%"></center><br />
+<center><img src="/assets/img/vimrc.jpg" width="80%"></center><br />
 - After editing & saving `.vimrc` file, open your vim by simple command `vim`
 - Then type `:PlugInstall`
-<center><img src="/blog/assets/img/vim_pluginstall.jpg" width="80%"></center><br />
+<center><img src="/assets/img/vim_pluginstall.jpg" width="80%"></center><br />
 - Now hit `ENTER` and you will see something like this
-<center><img src="/blog/assets/img/vim_pluginstalling.jpg" width="80%"></center><br />
+<center><img src="/assets/img/vim_pluginstalling.jpg" width="80%"></center><br />
 - After all done you can safely exit from `vim` as usual.
 - Now you are ready to go, just create your `python` script and Enjoy :)
-<center><img src="/blog/assets/img/vimjedi_preview.jpg" width="80%"></center><br />
+<center><img src="/assets/img/vimjedi_preview.jpg" width="80%"></center><br />

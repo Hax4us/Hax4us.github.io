@@ -35,9 +35,9 @@ fi
 
 ### Example For Better Understanding
 * Content of directory `$HOME/bash` ( See Attached Screenshot )
-<center><img src="/blog/assets/img/ss1.jpg" width="80%"></center><br />
+<center><img src="/assets/img/ss1.jpg" width="80%"></center><br />
 * After running script with required inputs i got output like below
-<center><img src="/blog/assets/img/ss2.jpg" width="80%"></center><br />
+<center><img src="/assets/img/ss2.jpg" width="80%"></center><br />
 * As you can see i got my all `.sh` files within given directory (including subdirectories test1, test2, test3, test4). But how ?
 
 #### Behind The Scene
@@ -74,8 +74,8 @@ done
 ```
 * They all are files, but not with `sh` extension, so nothing happens. Neither `[ -d t1 ]` nor `[ * = sh ]` will be execute.
 * Now after looping four times (t1,t2,t3,t4) function ends and will return to it's previous state where execution was stopped. (See below diagram)
-<center><img src="/blog/assets/img/stack.png" width="80%"></center><br />
-<center><img src="/blog/assets/img/stack2.png" width="80%"></center><br />
+<center><img src="/assets/img/stack.png" width="80%"></center><br />
+<center><img src="/assets/img/stack2.png" width="80%"></center><br />
 * So program was on line 16 when `scanner` was called second time. And one more thing, first called `scanner` function comes in __paused__ state while executing `scanner` second time. And when second `scanner` will do all his work then current `scanner` function will be wiped out from memory ( stack ) and then our paused `scanner` will resume from Line 17
 > yes your Operating system ( more specifically CPU ) maintains a stack where it stores recursive functions along with data like local variables. You should learn about stack if you are confused :)
 * We are on Line 17 now, it's time to `cd` back from `test1` folder and then check if `test1` has `sh` extension but it does not make sense because we know that `test1` is a folder not file, so it's your homework to not check folders for extension. Well so `if` part will not execute.
