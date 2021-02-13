@@ -5,7 +5,7 @@ METASPLOIT_PATH="${HOME}/metasploit-framework"
 # set ruby version
 android=$(getprop ro.build.version.release)
 if [ ${android%%.*} -ge 7 ]; then
-    RUBYVER=3.0.0
+    RUBYVER=2.7.0
 else
     RUBYVER=2.6.0
 fi
