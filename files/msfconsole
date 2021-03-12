@@ -11,7 +11,7 @@ else
 fi
 # Fix ruby bigdecimal extensions linking error.
 case "$(uname -m)" in
-	aarch64)
+	aarch64|armv8l)
 		export LD_PRELOAD="${PREFIX}/lib/ruby/$RUBYVER/aarch64-linux-android/bigdecimal.so:$LD_PRELOAD"
 		;;
 	arm*)
