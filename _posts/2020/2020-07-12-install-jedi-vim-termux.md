@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Jedi-Vim In Termux
-cover-img: /assets/img/vimjedi_preview.jpg
+cover-img: "/assets/img/vimjedi_preview.jpg"
 tags: [vim, termux]
 ---
 Let's see how to install jedi-vim plugin for python in termux. It's a cool plugin for pythonic guys.

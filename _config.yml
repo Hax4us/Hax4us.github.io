@@ -73,6 +73,7 @@ social-network-links:
   instagram: hax4us
   rss: false
   youtube: hax4us
+  telegram: lokesh_pandey
 # spotify: yourname
 # telephone: +1-(000)-000-0000
 # steam: yourname
@@ -84,10 +85,11 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: false
+  vk: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "www.hax4us.com"
+url-pretty: "hax4us.com"
 
 # --- Web Statistics Section --- #
 
