@@ -18,7 +18,12 @@ Well if you struggling while installing L3MON in termux then here is a solutiom 
 
 2. Then install apkmod from above link
 
-3. Now install our deb package
+3. Install nodejs & npm older version
+```bash
+apt install nodejs && npm install -g npm@6.14.10
+```
+
+4. Now install our deb package
 ```bash
 dpkg -i lemon_2.1-2_all.deb
 ```
