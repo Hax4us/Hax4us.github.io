@@ -14,13 +14,13 @@ To install Android SDK in Termux , you will have to follow some simple steps.
 1. First of all you will have to download Android SDK
 
     ```bash
-    wget https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk.tar.xz
+    https://github.com/Lzhiyong/termux-ndk/releases/download/android-sdk/android-sdk-aarch64.zip
     ```
 
 2. Extract into __share__ directory
 
     ```bash
-    tar xf android-sdk.tar.xz -C $PREFIX/share
+    unzip android-sdk-aarch64.zip -d $PREFIX/share
     ```
 
 3. Now make a wrapper for __sdkmanager__ 
