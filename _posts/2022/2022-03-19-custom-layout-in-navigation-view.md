@@ -28,7 +28,7 @@ Let's short list the steps, we are going to follow and complete in sequence.
     `activity_main.xml`
 
     ```xml
-    <androidx.drawer.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         xmlns:android="http://schemas.android.com/apk/res"
         android:id="drawer_layout"
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@ Let's short list the steps, we are going to follow and complete in sequence.
             <!-- Here we will place our custom layout -->
 
         </com.google.android.material.navigation.NavigationView>
-    </androidx.drawer.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
     ```
 
 
@@ -102,7 +102,7 @@ Let's short list the steps, we are going to follow and complete in sequence.
 * Now `activity_main.xml` becomes 
 
     ```xml
-    <androidx.drawer.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         xmlns:android="http://schemas.android.com/apk/res"
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
@@ -119,7 +119,7 @@ Let's short list the steps, we are going to follow and complete in sequence.
             <include layout="@layout/custom_navigation_layout />"
 
         </com.google.android.material.navigation.NavigationView>
-    </androidx.drawer.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
     ```
 
 
