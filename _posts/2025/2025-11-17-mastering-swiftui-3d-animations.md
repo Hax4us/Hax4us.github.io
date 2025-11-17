@@ -2,7 +2,8 @@
 title: "Mastering SwiftUI 3D Animations"
 date: 2025-11-17T08:00:00 +0200
 layout: post
-tags: [swiftui animation,3d transforms,timelineview]---
+tags: [swiftui animation,3d transforms,timelineview]
+---
 
 ## Mastering SwiftUI 3D Animations
 
