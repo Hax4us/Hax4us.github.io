@@ -1,23 +1,8 @@
 source 'https://rubygems.org'
 
-#gem "github-pages", '207', group: :jekyll_plugins
-gem "jekyll", "~> 4.4"
+gem "github-pages", '207', group: :jekyll_plugins
+
 # enable tzinfo-data for local build
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-#gem 'jekyll-paginate'
+gem 'jekyll-paginate'
 gem "webrick", "~> 1.7"
-gem "nokogiri", ">= 1.15.0", :platforms => [:ruby]
-gem "csv", "~> 3.3"
-
-gem "rexml"
-
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate"
-  gem "jekyll-redirect-from"
-  gem "jekyll-mentions"
-  gem "jekyll-include-cache"
-  gem "jekyll-avatar"
-end
