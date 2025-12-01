@@ -2,7 +2,8 @@
 title: "Async & Concurrency in SwiftUI"
 date: 2025-11-26T08:00:00 +0200
 layout: post
-tags: [async await,structured concurrency,swift tasks]---
+tags: [async await,structured concurrency,swift tasks]
+---
 
 ## Async & Concurrency in SwiftUI: A Complete Guide to Modern Swift Programming
 
