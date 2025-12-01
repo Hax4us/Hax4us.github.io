@@ -2,7 +2,8 @@
 title: "Building Modular SwiftUI Architecture"
 date: 2025-11-24T08:00:00 +0200
 layout: post
-tags: [modular architecture,di,scalable swiftui]---
+tags: [modular architecture,di,scalable swiftui]
+---
 
 ## Building Modular SwiftUI Architecture: From Basics to Advanced Patterns
 
