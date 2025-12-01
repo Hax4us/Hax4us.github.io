@@ -2,7 +2,8 @@
 title: "Integrating SwiftUI with UIKit & AppKit"
 date: 2025-11-25T08:00:00 +0200
 layout: post
-tags: [uihostingcontroller,representable,hybrid app]---
+tags: [uihostingcontroller,representable,hybrid app]
+---
 
 ## Integrating SwiftUI with UIKit & AppKit: A Complete Guide to SwiftUI UIKit Integration
 
